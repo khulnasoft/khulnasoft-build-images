@@ -1,0 +1,3 @@
+FROM sitespeedio/sitespeed.io
+
+COPY /assets/khulnasoft.txt $HOME/sitespeed.io/khulnasoft.txt
