@@ -1,0 +1,9 @@
+FROM node:14.18-alpine3.14
+
+RUN apk update \
+    && apk add --no-cache git
+
+RUN npm install --global apollo@2.33.9
+
+ENTRYPOINT ["apollo"]
+CMD ["--help"]
